@@ -74,22 +74,30 @@ const GlobalStyles = createGlobalStyle`
         font-size: 53px;
         font-family: 'IBM Plex Mono';
         line-height: 69px;
+        max-width: 740px;
     }
 
     h2 {
         font-weight: 400;
         font-size: 37px;
         line-height: 49px;
+        margin-bottom: 70px;
     }
 
     h3 {
         font-weight: 300;
         font-size: 20px;
         line-height: 26px;
+        max-width: 955px;
     }
 
     p {
         font-size: 16px;
+        font-weight: 200;
+    }
+
+    button {
+        cursor: pointer;
     }
 `
 
