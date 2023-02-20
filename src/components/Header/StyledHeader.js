@@ -11,7 +11,7 @@ export const HeaderWrap = styled.div`
     }
 `
 
-export const Menu = styled.div`
+export const HeaderMenu = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;

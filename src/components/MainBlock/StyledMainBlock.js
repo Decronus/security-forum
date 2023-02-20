@@ -20,7 +20,7 @@ export const MainBlockWrap = styled.div`
     }
 `
 
-export const Heading = styled.h1`
+export const MainBlockHeading = styled.h1`
     margin-bottom: 80px;
 
     @media (max-width: 500px) {
@@ -28,7 +28,7 @@ export const Heading = styled.h1`
     }
 `
 
-export const ParagraphCTA = styled.p`
+export const MainBlockParagraphCTA = styled.p`
     margin-bottom: 152px;
 
     @media (max-width: 500px) {

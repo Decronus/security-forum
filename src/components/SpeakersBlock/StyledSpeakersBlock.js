@@ -8,7 +8,6 @@ export const SpeakersBlockWrap = styled.div`
     background-size: cover;
     background-position: center -40px;
     ${BlockPadding}
-    padding-bottom: 190px;
 
     @media (max-width: 1090px) {
         background-position: center -400px;

@@ -11,6 +11,7 @@ export const SpeakerCardImg = styled.div`
     background: ${({img}) => img ? `url(${img})` : 'grey'};
     background-size: cover;
     margin-bottom: 35px;
+
     @media (max-width: 740px) {
         background-position: center;
         height: 320px;

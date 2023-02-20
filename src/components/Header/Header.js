@@ -7,10 +7,10 @@ const Header = () => {
         <S.HeaderWrap>
             <Logo />
 
-            <S.Menu>
+            <S.HeaderMenu>
                 <p>о мероприятии</p>
                 <p>спикеры</p>
-            </S.Menu>
+            </S.HeaderMenu>
 
             <Button text='Регистрация'/>
         </S.HeaderWrap>
