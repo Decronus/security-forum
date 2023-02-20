@@ -5,6 +5,10 @@ export const HeaderWrap = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 500px) {
+        padding-bottom: 100px;
+    }
 `
 
 export const Menu = styled.div`
@@ -20,5 +24,9 @@ export const Menu = styled.div`
             border-bottom: 2px solid #534878;
             transform: translateY(1px);
         }
+    }
+
+    @media (max-width: 740px) {
+        display: none;
     }
 `

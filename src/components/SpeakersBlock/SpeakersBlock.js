@@ -10,13 +10,13 @@ const SpeakersBlock = () => {
         axiosInstance.get('tz/speakers')
             .then(speakers => {
                 setSpeakersData(speakers.data.response);
-                console.log(speakers.data.response);
             })
     }, [])
 
 
     return (
         <S.SpeakersBlockWrap>
+            <h2>Спикеры нашего форума</h2>
             <S.SpeakersWrap>
                 {
                     speakersData?.map((speaker, key) => {

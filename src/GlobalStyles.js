@@ -12,6 +12,10 @@ import JetBrainsMonoLightWoff2 from './fonts/JetBrainsMono-Light.woff2'
 import JetBrainsMonoLightWoff from './fonts/JetBrainsMono-Light.woff'
 import JetBrainsMonoLightTtf from './fonts/JetBrainsMono-Light.ttf'
 
+import JetBrainsMonoRegularWoff2 from './fonts/JetBrainsMono-Regular.woff2'
+import JetBrainsMonoRegularWoff from './fonts/JetBrainsMono-Regular.woff'
+import JetBrainsMonoRegularTtf from './fonts/JetBrainsMono-Regular.ttf'
+
 import JetBrainsMonoMediumWoff2 from './fonts/JetBrainsMono-Medium.woff2'
 import JetBrainsMonoMediumWoff from './fonts/JetBrainsMono-Medium.woff'
 import JetBrainsMonoMediumTtf from './fonts/JetBrainsMono-Medium.ttf'
@@ -46,7 +50,16 @@ const GlobalStyles = createGlobalStyle`
         font-style: normal;
         font-display: swap;
     }
-    
+
+    @font-face {
+        font-family: 'JetBrains Mono';
+        src: url(${JetBrainsMonoRegularWoff2}) format('woff2'),
+            url(${JetBrainsMonoRegularWoff}) format('woff'),
+            url(${JetBrainsMonoRegularTtf}) format('truetype');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+    }
     
     @font-face {
         font-family: 'JetBrains Mono';
@@ -73,21 +86,19 @@ const GlobalStyles = createGlobalStyle`
     h1 {
         font-size: 53px;
         font-family: 'IBM Plex Mono';
-        line-height: 69px;
+        font-weight: 400;
         max-width: 740px;
     }
 
     h2 {
         font-weight: 400;
         font-size: 37px;
-        line-height: 49px;
         margin-bottom: 70px;
     }
 
     h3 {
         font-weight: 300;
         font-size: 20px;
-        line-height: 26px;
         max-width: 955px;
     }
 
@@ -98,6 +109,25 @@ const GlobalStyles = createGlobalStyle`
 
     button {
         cursor: pointer;
+    }
+
+    @media (max-width: 500px) {
+        h1 {
+            font-size: 32px;
+        }
+
+        h2 {
+            font-size: 29px;
+            margin-bottom: 40px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 14px;
+        }
     }
 `
 

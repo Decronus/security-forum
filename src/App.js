@@ -1,13 +1,14 @@
 import MainBlock from "./components/MainBlock/MainBlock";
 import SpeakersBlock from "./components/SpeakersBlock/SpeakersBlock";
+import StyledAppWrap from "./components/AppWrap/StyledAppWrap";
 
 
 function App() {
   return (
-    <div className="App">
+    <StyledAppWrap>
       <MainBlock />
       <SpeakersBlock />
-    </div>
+    </StyledAppWrap>
   );
 }
 
